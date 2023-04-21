@@ -31,6 +31,12 @@
     display: none;
 }
 
+
+
+#carouselBox > img.visible{
+    display: block;
+}
+
 .carouselBtn{
     position: absolute;
     background-color: white;
