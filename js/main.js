@@ -49,4 +49,28 @@ btnNext.addEventListener("click", function(){
 
 
 
+const btnBack = document.querySelector(".btnPrev");
+
+btnBack.addEventListener("click", function(){
+    if(currentImgIndex > 0) {
+        for(let c = 0; c < slideImages.length; c++){
+          const slide = slideImages[c];
+          console.log(currentImgIndex)
+          
+          if(c == currentImgIndex -1){
+            slide.classList.add("visible");
+          } else {
+            slide.classList.remove("visible")
+          }
+          
+        }
+
+        currentImgIndex--;
+    } else  {
+        currentImgIndex = 5;
+    }
+})
+
+
+
 
